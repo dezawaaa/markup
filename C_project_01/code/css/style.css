@@ -1,17 +1,10 @@
 @charset "utf-8";
 
-/* 공통 layout */
-.hide{font-size: 0; line-height: 0; text-indent: -9999px;}
-
 /* style css */
 #wrap{
   width: 1440px; height: auto;
   max-width: 1440px; margin: 0 auto;
   padding-top: 100px;
-}
-.maxWidth{
-  min-width: 940px; max-width: 1280px;
-  margin: 0 auto; 
 }
 /* -------------------------------- */
 #headBox{
