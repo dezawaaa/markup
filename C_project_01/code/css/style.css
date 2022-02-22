@@ -244,9 +244,12 @@
   padding: 10px 0;
 }
 #sponsorBox .sponsor_area{
-  width: 940px; height: 80px;
+  width: 1260px; height: 80px;
   background-color: #fff;
-  margin: 0 auto; 
+  margin: 0 auto; overflow:hidden;
+}
+#sponsorBox .sponsor_area > ul{
+  width: 1760px; height: 100%;
 }
 #sponsorBox .sponsor_area > ul::after{
   content: ''; display: block;
