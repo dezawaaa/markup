@@ -15,10 +15,15 @@ dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td, 
 figure, figcaption, footer, header, 
-menu, nav, output, section{margin: 0; padding: 0; border: 0; box-sizing: border-box;}
+menu, nav, output, section{
+    margin: 0; padding: 0; border: 0; 
+    font-size: 100%; font-family: inherit;
+    line-height: 120%;
+    box-sizing: border-box;
+}
 img{vertical-align: top;}
 ol,ul,li{list-style: none;}
-a{text-decoration: none; color: #242424; cursor: pointer;}
+a,abbr{text-decoration: none; color: #242424; cursor: pointer;}
 input,button,select,textarea{vertical-align: middle; border: 0;}
 button{
     border: 0; padding: 0;  
@@ -26,6 +31,13 @@ button{
     outline: none; 
 }
 button:hover{text-decoration:underline;}
+
+body { 
+    margin: 0; line-height:100%;
+    /* font-family: sans-serif; */
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {display: block;}

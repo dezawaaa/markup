@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="../fontawesome5/css/all.min.css" rel="stylesheet">
   <link href="../css/reset.css" rel="stylesheet">
   <link href="../css/style.css" rel="stylesheet">
   <link href="../css/common.css" rel="stylesheet">
@@ -12,25 +16,28 @@
   <div id="wrap">
     <header id="headBox">
       <div class="inner">
-        <div id="logo"><span>logo</span></div>
+        <div id="logo" class="blind_area">
+          <a href="../index.html">
+            <span>logo</span>
+          </a>
+        </div>
         <div id="navBox">
-          <span>navBox</span>
           <div class="unb">
             <ul>
-              <li>unb_01</li>
-              <li>unb_02</li>
-              <li>unb_03</li>
-              <li>unb_04</li>
+              <li><a href="#">한국어</a></li>
+              <li><a href="#">sign in</a></li>
+              <li><a href="#">sign up</a></li>
+              <li><a href="#">site map</a></li>
             </ul>
           </div>
           <div class="gnb">
-            <ul>
-              <li>gnb_01</li>
-              <li>gnb_02</li>
-              <li>gnb_03</li>
-              <li>gnb_04</li>
-              <li>gnb_05</li>
-              <li>gnb_06</li>
+            <ul class="clearfix">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">gift</a></li>
+              <li><a href="#"><abbr title="Frequently Asked Questions">FAQ<abbr></a></li>
+              <li><a href="#">event</a></li>
+              <li><a href="#">notice</a></li>
             </ul>
           </div>
         </div>
@@ -38,26 +45,53 @@
     </header>
     <!-- //#headBox end -->
     <div id="slideBox">
-      <div id="adCon_01">
-        <span>adCon_01</span>
+      <div class="slideArea">
+        <div id="adCon_01" class="slide_content clearfix">
+          <div class="slide_content_part">
+            <h3>adCon_01</h3>
+            <p>Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit.
+              Praesentium nihil doloribus harum
+              illum molestiae delectus distinctio
+              inventore maxime sit </p>
+            <div class="link">
+              <a href="#">바로가기
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+          <figure class="slide_img_part">
+            <figcaption class="blind">슬라이드 제목</figcaption>
+            <div class="slide_01">
+              <span class="blind">슬라이드에 따른 부연 사진 설명</span>
+            </div>
+          </figure>
+        </div>
       </div>
       <div class="btnArea">
-        <button type="button" class="prev">이전</button>
-        <button type="button" class="next">다음</button>
+        <button type="button" class="prev"><span>이전</span></button>
+        <button type="button" class="next"><span>다음</span></button>
       </div>
     </div>
     <!-- //#slideBox end -->
     <div id="newBox">
       <div class="inner">
-        <h2 class="area_title">area_title</h2>
-        <div class="area_content">
+        <h2 class="area_title">최신상품</h2>
+        <div class="area_content blind_area">
           <ul>
-            <li><span>content_01</span></li>
-            <li><span>content_02</span></li>
-            <li><span>content_03</span></li>
+            <li><a><span>content_01</span></a></li>
+            <li><a><span>content_02</span></a></li>
+            <li><a><span>content_03</span></a></li>
           </ul>
         </div>
-        <div class="area_indicator"><span>area_indicator</span></div>
+        <div class="area_indicator">
+          <span>area_indicator</span>
+          <ul class="blind_area">
+            <li><a href="#"><span>최신 첫번째내용</span></a></li>
+            <li><a href="#"><span>최신 두번째내용</span></a></li>
+            <li><a href="#"><span>최신 세번째내용</span></a></li>
+          </ul>
+        </div>
       </div>
     </div>
     <!-- //#newBox end -->

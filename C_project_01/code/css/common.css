@@ -9,12 +9,14 @@
   min-width: 940px; max-width: 1280px;
   margin: 0 auto; 
 }
-.first_margin >li:first-child{margin-left: 0;}
-.first_margin >li:last-child{margin-right: 0;}
+.first_margin li:first-child{margin-left: 0;}
+.first_margin li:last-child{margin-right: 0;}
 .blind_area a{
   display: block; width: 100%; height: 100%;
   background-repeat: no-repeat; background-position: 50% 50%;
 }
-.blind{width: 0; height: 0; overflow: hidden;}
+.blind_area a > span ,
+.blind_area button > span ,
+.blind{display:block; position: absolute; z-index:-1; width:0; height:0; overflow: hidden;}
 .none{display: none;}
 .hide{font-size: 0; line-height: 0; text-indent: -9999px;}
