@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="../fontawesome5/css/all.min.css" rel="stylesheet">
+  <link href="../css/common/common.css" rel="stylesheet">
+  <link href="../css/common/reset.css" rel="stylesheet">
+  <link href="../css/page/login.css" rel="stylesheet">
+  <title>로그인 페이지 제작하기</title>
+</head>
+<body>
+  <div id="wrap">
+    <header id="headBox">
+      <div class="inner">
+        <div id="logo" class="blind_area">
+          <a href="../index.html" title="osam coffee">
+            <span>logo</span>
+          </a>
+        </div>
+        <div id="navBox">
+          <div class="unb">
+            <ul>
+              <li><a href="#">한국어</a></li>
+              <li><a href="./login.html">log in</a></li>
+              <li><a href="#">join</a></li>
+              <li><a href="#">site map</a></li>
+            </ul>
+          </div>
+          <div class="gnb">
+            <ul class="clearfix">
+              <li><a href="#">about us</a></li>
+              <li><a href="#">menu</a></li>
+              <li><a href="#">gift</a></li>
+              <li><a href="#"><abbr title="Frequently Asked Questions">FAQ<abbr></a></li>
+              <li><a href="#">event</a></li>
+              <li><a href="#">notice</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+     <!-- //#headBox end -->
+     <article id="loginBox" class="clearfix">
+       <div class="intro_part">
+         <div class="intro_inner">
+           <div class="company_logo">
+           </div>
+           <h2>log in</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates accusamus rem deleniti libero debitis illo cumque veniam adipisci doloribus voluptatibus.</p>
+             <div class="video_inner">
+             <video autoplay muted loop poster="../img/login_page/login_bg.png">
+               <source src="../multi/Drinking-coffee.webm" type="video/webm">
+               <source src="../multi/Drinking-coffee.ovg" type="video/ogv">
+               <source src="../multi/Drinking-coffee.mp4" type="video/mp4">
+             </video>
+             </div>
+         </div>
+       </div>
+       <div class="login_form">
+         <form action="#" method="post">
+           <fieldset>
+             <legend class="blind">사용자 계정 입력</legend>
+            <div class="user_input">
+              <label for="userMail"><span class="blind">사용자 로그인을 위한 계정 이메일 주소를 입력하세요.</span>
+                <i class="icon"></i>
+              </label>
+              <input type="email" id="userMail" name="userMail" value=""placeholder="email@hostname.com" required />
+            </div>  
+            <div class="user_input">
+              <label for="userPassword"><span class="blind">사용자 로그인을 위한 비밀번호를 입력하세요.</span>
+                <i class="icon"></i>
+              </label>
+              <input type="password" id="userPassword" name="userPassword" value=""placeholder="password" required />
+            </div>  
+           </fieldset>
+           <fieldset>
+             <legend class="blind">확인버튼 및 기타 옵션</legend>
+              <div class="btnArea">
+                <input type="submit" value="로그인">
+              </div>
+              <div class="btnArea">
+                <a href="#">비밀번호 찾기</a>
+                <a href="#">회원가입</a>
+              </div>
+           </fieldset>
+         </form>
+       </div>
+     </article>
+
+     <div id="footerBox">
+      <div class="maxWidth inner">
+        <div class="info_logo"><span class="blind">info_logo</span></div>
+        <div class="info_company">
+          <div class="company_content">
+            <span class="blind">company_content</span>
+            <ul class="list_coap">
+              <li><a href="#">이용약관</a></li>
+              <li><a href="#">개인정보처리방침</a></li>
+              <li><a href="#">운영정책</a></li>
+              <li><a href="#">권리침해신고안내</a></li>
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+            <address>
+              <p>서울특별시 강남구 논현동 000 MEGA빌딩 (서울특별시 강남구 논현동 000-00)</p>
+              <dl class="clearfix">
+                <dt>Tel</dt>
+                <dd>02-0000-0000</dd>
+                <dt>fax</dt>
+                <dd>02-0000-0001</dd>
+              </dl>
+              <dl class="clearfix">
+                <dt>사업자등록번호</dt>
+                <dd>100-00-00000</dd>
+                <dt>통신판매업 신고</dt>
+                <dd>강남 제 000000호</dd>
+                <dt>대표이사</dt>
+                <dd>000</dd>
+              </dl>
+              <p>© coffinx Corp. All rights reserved.</p>
+            </address>
+          </div> 
+          <!-- company content -->
+          <div class="company_link">
+            <div class="social">
+              <ul>
+                <li><a href="#">sns_01</a></li>
+                <li><a href="#">sns_02</a></li>
+                <li><a href="#">sns_03</a></li>
+              </ul>
+            </div>
+            <div class="family_site">
+              <label for="site" class="blind">company_link</label>
+              <select name="" id="site">
+                 <option value="#">site_01</option>
+                 <option value="#">site_02</option>
+                 <option value="#">site_03</option>
+              </select>
+            </div>
+            <div class="autentication"></div>
+          </div>
+          <!-- company link -->
+        </div>
+      </div>
+    </div>
+    <!-- //#footerBox end -->
+  </div>
+</body>
+</html>
